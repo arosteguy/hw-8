@@ -1,0 +1,20 @@
+{
+  "name": "hw-8",
+  "version": "1.0.0",
+  "description": "HTML conversion to PDF",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "inquirer": "^7.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "arosteguy"
+  },
+  "author": "Lori Arosteguy",
+  "license": "ISC"
+}
