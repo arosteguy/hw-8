@@ -173,7 +173,53 @@ function generateHTML(data) {
           </style>
       </head>
       <body>
+      <div class= "wrapper">
+            <div class= "photo-header"></div>
+              <img src= "${data.avatar_url}" />
+                <h1>Hi!</h1>
+                <h2>My name is ${data.name}!</h2>
+                <h4>Currently at ${data.company}</h4>
+              <nav class="links-nav">
+              ${data.location ? `<a class="nav-link" target="_blank" href="https://www.google.com/maps/place/${data.location}"><i class="fas fa-location-arrow"></i> ${data.location}</a>`: ""}
+              <a class= "nav-link" target= "_blank" href= "${data.html_url}"><i class= "fab fa-github-alt"></i> GitHub</a>
+              ${data.blog ? `<a class= "nav-link" target= "_blank" href= "${data.blog}"><i class= "fas fa-rss"></i> Blog </a>` : ""}
+              </nav>   
+            </div>
+              <div class= "workExp-date" ></div>
+          <main>  
+          <div class= "container">
+              <div class= "row">
+                <div class= "col">
+                  <h3>${data.bio} ? `${data.bio}` : "" </h3>
+                </div>
+              </div>
+              <div class= "row">
+                <div class= "col">
+                  <div class= "card">
+                    <h3>Public Repositories</h3>
+                    <h4>${data.public_repos}</h4>
+                  </div>
+                </div>
+                <div class= "col">
+                  <div class= "card">
+                    <h3>Followers</h3>
+                    <h4>${data.followers}</h4>
+                  </div>
+                </div>
+              </div>
+              <div class= "row">
+                <div class= "col">
+                  <div class= "card">
+                    <h3>GitHub Stars</h3>
+                    <h4>${data.stars}</h4>
+                  </div>
+                </div>
+              </div>
+            </main>
+            </div>
+            <script src="./index.js"></script>
         
       </body>
     </html>`
 }
+module.exports = generateHTML;
