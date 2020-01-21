@@ -190,7 +190,7 @@ function generateHTML(data) {
           <div class= "container">
               <div class= "row">
                 <div class= "col">
-                  <h3>${data.bio} ? `${data.bio}` : "" </h3>
+                  <h3>${data.bio} ? ${data.bio} : "" </h3>
                 </div>
               </div>
               <div class= "row">

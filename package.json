@@ -6,7 +6,8 @@
   "dependencies": {
     "axios": "^0.19.1",
     "inquirer": "^7.0.3",
-    "prince": "^1.7.0"
+    "prince": "^1.7.0",
+    "util": "^0.12.1"
   },
   "devDependencies": {},
   "scripts": {

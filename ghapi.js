@@ -3,3 +3,19 @@ const axios = require("axios");
 const inquirer = require("inquirer");
 const Prince = require("prince");
 
+const index = require("./index.js");
+const generateHTML = require("./generateHTML.js")
+
+
+// .then(function ({ username, colors }) {
+//     const queryUrl = `https://api.github.com/users/${username}?client_id=undefined&client_secret=undefined`;
+//     axios.get(queryUrl).then(({ data }) => {
+//         console.log(data);
+//     });
+//     console.log(colors);
+// })
+
+// .catch(function(err){
+//     console.log(err);
+// })
+// module.exports = ghapi.js;
