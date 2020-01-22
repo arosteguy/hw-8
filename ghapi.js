@@ -2,7 +2,7 @@ const fs = require("fs");
 const axios = require("axios");
 const inquirer = require("inquirer");
 const Prince = require("prince");
-
+const util = require("util");
 const index = require("./index.js");
 const generateHTML = require("./generateHTML.js")
 
@@ -18,4 +18,20 @@ const generateHTML = require("./generateHTML.js")
 // .catch(function(err){
 //     console.log(err);
 // })
-// module.exports = ghapi.js;
+
+// Prince()
+//     .inputs("test.html")
+//     .output("test.pdf")
+//     .execute()
+//     .then(function (generateHTML) {
+//         console.log("OK: done")
+//     })
+//     .catch( function (error) {
+//         console.log("ERROR: ", util.inspect(error))
+//     })
+   
+  
+   
+    
+   
+   
